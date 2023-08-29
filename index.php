@@ -5,7 +5,7 @@ require 'modal/config.php';
 if(isset($_GET['page']) ){
     $controller  = $_GET['page'];
 }else{
-    $controller  = "user_list";
+    $controller  = "login";
 }
 
 $controller_filepath = "controller/" . $controller . ".php";

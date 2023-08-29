@@ -1,3 +1,11 @@
 <?php
-// Bu dosya her istekte otomatik olarak çalışacak. Ana dizinde index.php dosyasında bunu tanımladık. Bu yüzden buraya veritabanı bağlantılarını ve ek olarak eğer istiyorsak tüm sayfalarda var olmasını istediğimiz fonksiyon, değişken vb. kodları yazacağız. 
+error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
+ini_set("display_errors", 1);
+$host = "localhost";
+$user = "root";
+$password = "";
+$dbname = "php_project";
+$dsn = "mysql:host=" . $host . ";dbname=" . $dbname;
+$pdo = new PDO($dsn, $user, $password);
+
 ?>
