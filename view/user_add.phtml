@@ -12,14 +12,14 @@
 <body class="bg-secondary">
   <div class="container mt-3 w3-border w3-padding w3-round ws-grey">
     <form method="post">
-      <input type="hidden" name="action" value="s">
+      <input type="hidden" name="action" value="add_user">
       <div class="mb-3 mt-3">
         <label for="email" class="fxorm-label text-white">email:</label>
-        <input type="text" class="form-control" style="margin-top:5px!important" id="email" placeholder="Enter email" name="email">
+        <input type="text" class="form-control" style="margin-top:5px!important" id="email" placeholder="enter email" name="email">
       </div>
       <div class="mb-3">
         <label for="pwd" class="form-label text-white">password:</label>
-        <input type="password" class="form-control" id="password" style="margin-top:5px!important" placeholder="Enter password" name="password">
+        <input type="password" class="form-control" id="password" style="margin-top:5px!important" placeholder="enter password" name="password">
       </div>
       <div class="mb-3">
         <label for="pwd" class="form-label text-white">confirm password:</label>
@@ -28,6 +28,14 @@
       <button type="submit" class="btn btn-primary mb-3">add user</button>
     </form>
   </div>
+  <?php
+  if (!isset($_COOKIE[$cookie_name])) {
+    echo "Cookie named '" . $cookie_name . "' is not set!";
+  } else {
+    echo "Cookie '" . $cookie_name . "' is set!<br>";
+    echo "Value is: " . $_COOKIE[$cookie_name];
+  }
+  ?>
 </body>
 
 </html>
