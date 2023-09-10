@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>log patient</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="bg-secondary">
+    <div class="container mt-3 w3-border w3-padding w3-round ws-grey">
+        <form method="post">
+            <input type="hidden" name="action" value="log_patient">
+            <div class="mb-3 mt-3">
+                <label for="email" class="fxorm-label text-white">patient name:</label>
+                <input type="text" class="form-control" style="margin-top:5px!important" id="patient_name" placeholder="enter name" name="patient_name">
+            </div>
+            <div class="mb-3">
+                <label for="pwd" class="form-label text-white">tc:</label>
+                <input type="text" class="form-control" id="tc_no" style="margin-top:5px!important" placeholder="tc" name="tc_no">
+            </div>
+
+            <label for="gender"> Select you gender</label>
+            <select id="gender" name="gender">
+                <option value="none" selected>Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <div class="mb-3">
+                <label for="pwd" class="form-label text-white">birth date:</label>
+                <input type="text" class="form-control " id="birth_date" style="margin-top:5px!important" placeholder="birth_date" name="birth_date">
+            </div>
+
+            <div class="mb-3">
+                <label for="pwd" class="form-label text-white">height:</label>
+                <input type="text" class="form-control " id="height" style="margin-top:5px!important" placeholder="height" name="height">
+            </div>
+
+            <div class="mb-3">
+                <label for="pwd" class="form-label text-white">weight:</label>
+                <input type="text" class="form-control " id="weight" style="margin-top:5px!important" placeholder="weight" name="weight">
+            </div>
+
+            <div class="mb-3">
+                <label for="pwd" class="form-label text-white">BMI:</label>
+                <input type="text" class="form-control " id="BMI" style="margin-top:5px!important" placeholder="BMI" name="BMI">
+            </div>
+
+            <div class="mb-3">
+                <label for="pwd" class="form-label text-white">Complaint:</label>
+                <input type="text" class="form-control " id="complaint" style="margin-top:5px!important" placeholder="Complaint" name="complaint">
+            </div>
+
+            <div class="mb-3">
+                <label for="pwd" class="form-label text-white">ilness:</label>
+                <input type="text" class="form-control " id="ilness" style="margin-top:5px!important" placeholder="ilness" name="ilness">
+            </div>
+
+            <div class="mb-3">
+                <label for="pwd" class="form-label text-white">smoker:</label>
+                <input type="text" class="form-control " id="smoker" style="margin-top:5px!important" placeholder="smoker" name="smoker">
+            </div>
+
+            <div class="mb-3">
+                <label for="pwd" class="form-label text-white">how many:</label>
+                <input type="text" class="form-control " id="amountOfCigs" style="margin-top:5px!important" placeholder="amountOfCigs" name="amountOfCigs">
+            </div>
+
+            <div class="mb-3">
+                <label for="pwd" class="form-label text-white">phone no:</label>
+                <input type="text" class="form-control " id="phone_no" style="margin-top:5px!important" placeholder="phone_no" name="phone_no">
+            </div>
+
+            <div class="mb-3">
+                <label for="pwd" class="form-label text-white">adress:</label>
+                <input type="text" class="form-control " id="adress" style="margin-top:5px!important" placeholder="adress" name="adress">
+            </div>
+
+
+            <button type="submit" class="btn btn-primary mb-3">add patient</button>
+        </form>
+    </div>
+</body>
+
+</html>
