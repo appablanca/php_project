@@ -40,7 +40,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'log_patient') {
     $addPatient->bindParam(":phone_no",$patientPhoneNo);
     $addPatient->bindParam(":adress",$patientAdress);
     $addPatient->execute();
-    header("Location: user_list");
+    header("Location: patient_list");
 }
 
 

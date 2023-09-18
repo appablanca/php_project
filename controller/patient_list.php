@@ -29,10 +29,8 @@ echo "<th>delete</th>";
 echo "</tr>";
 echo "</thead>";
 echo "<tbody>";
-
 foreach ($return as $patient) {
     if ($patient->deleted === 0) {
-        echo 10;
         echo "<tr>";
         echo "<td>" . $patient->patient_no . "</td>";
         echo "<td>" . $patient->patient_name . "</td>";
@@ -48,9 +46,16 @@ foreach ($return as $patient) {
         echo "<td>" . $patient->amountOfCigs . "</td>";
         echo "<td>" . $patient->phone_no . "</td>";
         echo "<td>" . $patient->adress . "</td>";
-        echo "<td>" . $patient->adress . "</td>";
-        echo "<td>" . $patient->adress . "</td>";
+        
+        echo "<form method = 'post' action='patient_update'> ";
+        echo "<input type='hidden' name = 'patient_no' value = ' $patient->patient_no' >";
+        echo "<td>" . "<button type = 'submit' class='btn btn-primary mb-3'>edit</button>" . "</td>";
+        echo "</form>";
 
+        echo "<form method = 'post' action='patient_delete'>";
+        echo "<input type='hidden' name = 'patient_no' value = ' $patient->patient_no' >";
+        echo "<td>" . "<button type = 'submit' class='btn btn-primary mb-3'>delete</button>" . "</td>";
+        echo "</form>";
       
 
         echo "</tr>";

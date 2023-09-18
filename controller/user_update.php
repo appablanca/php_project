@@ -33,5 +33,5 @@ if (isset($_POST['action']) && $_POST['action'] == 'user_update') {
 
     }
 }
-include("view/log_patient.phtml");
+include("view/user_update.phtml");
 include('view/footer.phtml');
